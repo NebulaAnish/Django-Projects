@@ -1,0 +1,11 @@
+- startproject
+- make app named listing
+- add new app to installed apps
+- makemigrations # to create database table 
+- apply migrations # to apply changes to database (create in this case)
+- make a class Listing by inheriting from models.Model 
+- make required variables like room = models.IntegerField(max_length=100)
+- apply migrations to the database
+- register the model to admin.py to be able to use it from /admin route
+      from .models import Listing
+      admin.site.register(Listing)
