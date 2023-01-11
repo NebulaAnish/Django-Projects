@@ -25,4 +25,4 @@ Description: It is a simple app that helps keep records of passengers in a parti
     - View details for each listing
     - Edit details for each listing
     - Delete listing
-  ### Steps to run: Clone locally and runserver
+  -Steps to run: Clone locally and runserver
