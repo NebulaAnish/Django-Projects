@@ -4,7 +4,8 @@ Here are basic projects that I've made in the process of learning Django. I'll b
 ## Environment Setup:
   To use same version of tools as were used during development please setup your virtual environment with the settings in requirements.txt to make sure things don't break with a different version.
   - $ pip install -r requirements.txt    
-STEPS to run for each project:
+  - 
+## STEPS to run for each project:
   - clone the repository in your local device
   - Head towards the particular project folder
   - navigate to the folder containing manage.py for that project
