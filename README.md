@@ -20,6 +20,7 @@ Description: It is a simple app that helps keep records of passengers in a parti
 ## Project 2: Real Estate Listing
 
   Description: It is a real estate property listing site which has following features:
+  
     - List all the properties with their images on the landing page
     - Add new entry to the listing
     - View details for each listing
