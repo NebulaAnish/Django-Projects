@@ -9,3 +9,38 @@
 - register the model to admin.py to be able to use it from /admin route
       from .models import Listing
       admin.site.register(Listing)
+
+- create a view in views.py for each CRUD + list operations
+
+** List View:
+            def listing_list(request):
+                  listings = Listings(name of class).objects.all()
+                  context = {
+                        "listings":listings
+                  }
+                  return render(request,"listing.html",context)
+- this view is associated with default route in urls.py
+- in settings.py edit path in templates variable to allow BASE_DIR/"templates"
+- make templates folder in BASE_DIR and make listings.html
+- using jinja templating list the contents of each listing
+
+- also import the listing_list  view into urls.py
+-     path("", listing_list)    # listing_list is imported from app_name/views.py
+
+** Retrieve View:
+            def listing_retrieve(request,pk): # pk means primary key
+                  listing =  Listings.objects.get(id=pk)
+                  context = {
+                        "listing":listing
+                  }
+                  return render(request,"retrieve.html",context)
+- this is associated with /listing/<pk>/ route in urls.py 
+- make retrieve.html in templates folder
+
+** Create View:
+- create forms.py inside listing(app dir) folder
+       from django.forms import ModelForm, forms
+       from .models import Listing(model name)  
+- create form using class:
+      class ListingForm(ModelForm):
+            k

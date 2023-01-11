@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="text-4xl text-gray-900 mb-4">Update Listing</h1>
+<form method="post" action="#" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="">{{ form.as_p}}</div>
+  <button type="submit" class="text-white bg-sky-900 px-3 py-2 rounded-md">
+    Submit
+  </button>
+</form>
+
+{% endblock content %}
