@@ -19,5 +19,10 @@ Description: It is a simple app that helps keep records of passengers in a parti
 
 ## Project 2: Real estate listing (on progress)
 
-  Description: 
-  ### Steps to run: 
+  Description: It is a real estate property listing site which has following features:
+    - List all the properties with their images on the landing page
+    - Add new entry to the listing
+    - View details for each listing
+    - Edit details for each listing
+    - Delete listing
+  ### Steps to run: Clone locally and runserver
