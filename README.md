@@ -17,7 +17,7 @@ Here are basic projects that I've made in the process of learning Django. I'll b
 Description: It is a simple app that helps keep records of passengers in a particular flight. It shows info of a single flight like it's flight route, names of passengers and time. Also it lists all the plane routes that are assigned to a single passenger. The frontend is trash.
   - navigate to localhost:8000/flights to find the actual app
 
-## Project 2: Real estate listing (on progress)
+## Project 2: Real Estate Listing
 
   Description: It is a real estate property listing site which has following features:
     - List all the properties with their images on the landing page
