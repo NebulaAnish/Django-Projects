@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ listing.title}} </h1>
+<p> {{listing.author}} </p>
+<p>{{ listing.price }}$ </p>
+<p>{{ listing.ratings }} </p>
+
+
+<a href="edit/">Edit</a>
+<a href="delete/">Delete</a>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for listing in listings%}
+<div class="card">
+<h1> {{listing.title}} </h1>
+<p> {{ listing.author }} </p>
+<a href="listing/{{listing.id}}/">View Details</a>
+</div>
+{% endfor %}
+<a href="add_listing/"> 
+   <button> Create New </button>
+</a>
+{% endblock %}

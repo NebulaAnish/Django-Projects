@@ -97,3 +97,31 @@ same as create view but the difference being:
       return redirect("/")
 - in urls:
       path("listing/<pk>/delete",listing_delete)
+
+## Using Image field
+- in models.py:
+	image = models.ImageField()
+- $ pip install pillow
+- $ python manage.py makemigrations
+- $ python manage.py migrate # type 1 and empty string ""
+
+- in forms.py :
+	add image as a field
+- in listing_create.html and listing_update.html:
+	- withing form tag:
+		enctype="multipart/form-data"
+- in views.py:
+	form = ListingForm(request.POST,files=request.FILES)
+- in listing_list.html and listing_retrieve.html:
+	img src="{{ listing.image.url }}"
+
+- in settings.py:
+	STATIC_URL = "static/"
+	MEDIA_URL = "media/"
+	MEDIA_ROOT = "media"
+- in urls.py:
+	from django.conf import settings
+	from django.conf.urls.static import static
+	
+	if settings.DEBUG:
+		urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT) 
