@@ -1,14 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% for listing in listings%}
+
+<div class="card-container">
+   {% for listing in listings%}
 <div class="card">
+   <img src="https://static-01.daraz.com.np/p/3df9734f36b5ac558479d05bc2fe7d42.jpg" alt="">
+   <a href="listing/{{listing.id}}/">
+     <h2>{{ listing.title }}</h2>
+     <h3>{{ listing.author }}</h3>
+   </a>
+   <div class="rating">
+     <p>{{ listing.ratings }} <span class="material-symbols-outlined">
+       star
+       </span></p>
+   </div>
+ </div>
+
+<!-- <div class="card">
 <h1> {{listing.title}} </h1>
 <p> {{ listing.author }} </p>
 <a href="listing/{{listing.id}}/">View Details</a>
-</div>
+</div> -->
 {% endfor %}
+
+</div>
 <a href="add_listing/"> 
-   <button> Create New </button>
+   <button class="add-button"> Create New </button>
 </a>
 {% endblock %}

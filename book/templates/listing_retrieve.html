@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>{{ listing.title}} </h1>
-<p> {{listing.author}} </p>
-<p>{{ listing.price }}$ </p>
-<p>{{ listing.ratings }} </p>
-
-
-<a href="edit/">Edit</a>
-<a href="delete/">Delete</a>
+<div class="card">
+   <img src="https://static-01.daraz.com.np/p/3df9734f36b5ac558479d05bc2fe7d42.jpg" alt="">
+   <a href="listing/{{listing.id}}/">
+     <h2>{{ listing.title }}</h2>
+     <h3>{{ listing.author }}</h3>
+   </a>
+   <div class="rating">
+     <p>{{ listing.ratings }} <span class="material-symbols-outlined">
+       star
+       </span></p>
+   </div>
+ </div>
+<div class="button-container">
+   <a href="edit/"><button>Edit</button></a>
+<a href="delete/"><button>Delete</button></a>
+</div>
 {% endblock %}
