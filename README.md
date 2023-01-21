@@ -28,7 +28,7 @@ Description: It is a simple app that helps keep records of passengers in a parti
     - Delete listing
   -Steps to run: Clone locally and runserver
 
-## Project 3: Book Shelf (Styling left....)
+## Project 3: Book Shelf (Option to upload image left...)
   Description: It is a website to list books. With this application one can create/retrieve/update/delete the existing books in the shelf.
 
   - steps to run: Clone locally and runserver through the venv as specified in requirements.txt
