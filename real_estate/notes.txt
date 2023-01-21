@@ -1,4 +1,4 @@
-- startproject
+- startproject: $ django-admin startproject real_state
 - make app named listing
 - add new app to installed apps
 - makemigrations # to create database table 
