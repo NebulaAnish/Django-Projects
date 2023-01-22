@@ -17,7 +17,8 @@ Here are basic projects that I've made in the process of learning Django. I'll b
 Description: It is a simple app that helps keep records of passengers in a particular flight. It shows info of a single flight like it's flight route, names of passengers and time. Also it lists all the plane routes that are assigned to a single passenger. The frontend is trash.
   - navigate to localhost:8000/flights to find the actual app
 
-![airlines](images/airlines_1.jpg)
+![airlines](https://github.com/NebulaAnish/Django-Practise/blob/main/images/airlines_1.JPG)
+![airlines](https://github.com/NebulaAnish/Django-Practise/blob/main/images/airlines_2.JPG)
 
 ## Project 2: Real Estate Listing
 
@@ -29,6 +30,10 @@ Description: It is a simple app that helps keep records of passengers in a parti
     - Edit details for each listing
     - Delete listing
   -Steps to run: Clone locally and runserver
+
+![real estate](https://github.com/NebulaAnish/Django-Practise/blob/main/images/real_estate_1.JPG)
+![real estate](https://github.com/NebulaAnish/Django-Practise/blob/main/images/real_estate_2.JPG)
+![real estate](https://github.com/NebulaAnish/Django-Practise/blob/main/images/real_estate_3.JPG)
 
 ## Project 3: Book Shelf (Option to upload image left...)
   Description: It is a website to list books. With this application one can create/retrieve/update/delete the existing books in the shelf.
