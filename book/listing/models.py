@@ -7,6 +7,6 @@ class Listing(models.Model):
    author = models.CharField(max_length=100)
    price = models.FloatField()
    ratings = models.FloatField()
-   #image
+   image = models.ImageField()
    def __str__(self):
       return self.title

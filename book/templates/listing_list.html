@@ -5,7 +5,7 @@
 <div class="card-container">
    {% for listing in listings%}
 <div class="card">
-   <img src="https://static-01.daraz.com.np/p/3df9734f36b5ac558479d05bc2fe7d42.jpg" alt="">
+   <img src="{{ listing.image.url }}" alt="">
    <a href="listing/{{listing.id}}/">
      <h2>{{ listing.title }}</h2>
      <h3>{{ listing.author }}</h3>

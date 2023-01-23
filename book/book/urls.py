@@ -8,6 +8,8 @@ from listing.views import (
     listing_update,
     listing_delete
     )
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -17,3 +19,6 @@ urlpatterns = [
     path("listing/<pk>/edit/",listing_update),
     path("listing/<pk>/delete/",listing_delete),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

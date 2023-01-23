@@ -9,5 +9,6 @@ class ListingForm(ModelForm):
       "author",
       "price",
       "ratings",
+      "image",
       ]
    

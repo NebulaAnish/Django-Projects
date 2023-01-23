@@ -35,7 +35,10 @@ Description: It is a simple app that helps keep records of passengers in a parti
 ![real estate](https://github.com/NebulaAnish/Django-Practise/blob/main/images/real_estate_2.JPG)
 ![real estate](https://github.com/NebulaAnish/Django-Practise/blob/main/images/real_estate_3.JPG)
 
-## Project 3: Book Shelf (Option to upload image left...)
+## Project 3: Book Shelf 
   Description: It is a website to list books. With this application one can create/retrieve/update/delete the existing books in the shelf.
 
   - steps to run: Clone locally and runserver through the venv as specified in requirements.txt
+![Book](https://github.com/NebulaAnish/Django-Practise/blob/main/images/book_1.JPG)
+![Book](https://github.com/NebulaAnish/Django-Practise/blob/main/images/book_2.JPG)
+![Book](https://github.com/NebulaAnish/Django-Practise/blob/main/images/book_3.JPG)
