@@ -55,7 +55,7 @@ span {
 .add-button {
   border: none;
   padding: 10px;
-  background-color: #472183;
+  background-color: hsl(263, 60%, 32%);
   color: white;
   font: inherit;
   border-radius: 10px;
