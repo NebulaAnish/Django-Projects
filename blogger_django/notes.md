@@ -14,10 +14,10 @@
 - in base.py DEBUG= True is set 
 - import base from djblogger.settings
 - in manage.py main function:
-   -  if base.DEBUG :
-         os.environ........("...","djblogger.settings.local")
-      else:
-         os.environ........("...","djblogger.settings.production")
+   -  if base.DEBUG :   <br>
+         os.environ........("...","djblogger.settings.local") <br>
+      else:<br>
+         os.environ........("...","djblogger.settings.production")<br>
 
 ## Generating secret Key
 - python manage.py shell
@@ -37,3 +37,17 @@
       - DEBUG = os.environ.get('DEBUG') == "TRUE"
 
 ## Pytest Setup for testing purpose
+- pip install pytest-django
+- make pytest.ini in the main folder; same level as manage.py
+- Inside pytest.ini:
+   - [pytest]
+   - DJANGO_SETTING_MODULE = djblogger.settings.local
+   - python_files = test_*.py
+   - make tests folder ; same level as other apps
+   - make test_example.py:
+      def test_example():
+         assert 1==1
+   - run pytest command in terminal to run test
+
+## Creating Github repo 
+   
